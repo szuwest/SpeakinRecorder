@@ -34,7 +34,14 @@
 
 采用WebSocket来实现双向通信有不少好处，例如它直接支持发送字符串消息，二进制数据（文件），还有连接上和断开都有相应的事件，还有ping-pong这种心跳机制，我觉得挺好的。iOS端的WebSocket server暂时没有找到可靠的第三方实现，比较遗憾。
 
+### 后记
+后来我找到了一个还算比较可靠的包含server的iOS的WebSocket库：PocketSocket。我已经使用起来了，整体比较稳定，虽然有些还是不是很完善，比起其他的，已经很好了。唯一比较大的问题是它不支持设置连接超时，需要自己设置一个心跳来自己检测。总体来说也不错了.
+
+
 我自己做了demo工程，上传到github。
 
 * [Android局域网发现和建立一对多通信](https://github.com/szuwest/Recorder)
 * [iOS局域网发现和建立一对多通信](https://github.com/szuwest/SpeakinRecorder)
+
+如果对你有用或许你可以打赏请我喝杯咖啡☕️
+![打赏](https://raw.githubusercontent.com/szuwest/szuwest.github.io/master/images/2018-02-21%20133111.jpg)
